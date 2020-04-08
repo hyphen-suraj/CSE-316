@@ -9,7 +9,7 @@ struct job{
 	int cmpt;
 }f[100], s[100], m[100];
 
-
+/*instruction function provides with all the instruction for the alorithm */
 
 void instruction(){
 	printf("\nWelcome, please follow these instruction for proper functioning of the program"
@@ -30,8 +30,7 @@ int n, fc=0, sc=0, mc=0;
 
 
 
-
-
+/* mergerAlgo function will merger both faculty(f[]) and student array(s[]) into m[] according to the priority */
 
 void mergerAlgo(){
 	int isc=0, ifc= 0, min, flag;
@@ -95,7 +94,7 @@ void mergerAlgo(){
 
 int quantam;
 
-
+/* roundRobinAlgo function  implements round robin alorithm */
 
 void roundRobinAlgo(){
 	int time= m[0].arrivalTime, mark=0, cc=0, i, rc;
@@ -123,7 +122,7 @@ void roundRobinAlgo(){
 }
 
 
-
+/*printFunction function implements the output from the roundRobinAlgo */
 
 
 void printFunction(){
@@ -143,7 +142,7 @@ void printFunction(){
 	printf("\nProcess Execution Complete");
 }
 
-
+/* inputFunction takes all the input fo-r the algorithm*/
 
 void inputFunction(){
 	int map,  i, t;
